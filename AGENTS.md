@@ -1,6 +1,9 @@
 # Agents.md
 
-## 1) Work Style
+## 1) Agent Protocol
+- Files: repo or `~/Desktop/Coding/agenticPrograms/agent-scripts`
+
+## 2) Work Style
 - Goal: min tokens, max signal.
 - Voice: direct, terse, no filler.
 - Prefer noun phrases over full prose.
@@ -8,7 +11,7 @@
 - Avoid polite/formal padding (`please`, long intros, apologies unless needed).
 - Output format: short bullets, flat lists, actionable items first.
 
-## 2) Read-When Hints (Context Discovery)
+## 3) Read-When Hints (Context Discovery)
 - Before coding, run:
   - `python3 list-docs.py`
 - Parse listing results.
@@ -20,7 +23,7 @@
   - If no hint match, skip doc body and continue.
 - Re-check docs listing when scope changes significantly.
 
-## 3) Safety Guardrails (Trash Rule)
+## 4) Safety Guardrails (Trash Rule)
 - Never use `rm -rf` for routine deletes.
 - Use `trash` command instead (recoverable delete).
 - For bulk/critical deletes:
@@ -28,7 +31,7 @@
   - confirm path scope
   - then `trash <targets>`
 
-## 4) Conventional Commits + Small Files
+## 5) Conventional Commits + Small Files
 - File size target: keep source files under `500` LOC.
 - If file exceeds `500` LOC:
   - refactor by concern/module split
