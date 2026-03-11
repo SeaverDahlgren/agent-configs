@@ -12,16 +12,10 @@
 - Output format: short bullets, flat lists, actionable items first.
 
 ## 3) Read-When Hints (Context Discovery)
-- Before coding, run:
-  - `python3 list-docs.py`
+- Before coding, run:`list-docs.py` script
 - Parse listing results.
-- For each doc:
-  - read `summary`
-  - read `read_when`
-- Decision rule:
-  - If task intent matches `read_when` hints, open that markdown before editing code.
-  - If no hint match, skip doc body and continue.
-- Re-check docs listing when scope changes significantly.
+- If task intent matches `read_when` hints, open that markdown before editing code.
+- If no hint match, skip doc body and continue.
 
 ## 4) Safety Guardrails (Trash Rule)
 - Never use `rm -rf` for routine deletes.
